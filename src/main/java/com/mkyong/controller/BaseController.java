@@ -29,7 +29,7 @@ public class BaseController {
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
-		model.addAttribute("message", "Welcome to INFOSYS" + name);
+		model.addAttribute("message", "Welcome To INFOSYS LTD." + name);
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
