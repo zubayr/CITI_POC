@@ -17,7 +17,7 @@ public class BaseController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
 
-		model.addAttribute("message", "Welcome To INFOSYS");
+		model.addAttribute("message", "Welcome To INFOSYS LTD.");
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcome] counter : {}", counter);
 
@@ -29,7 +29,7 @@ public class BaseController {
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
-		model.addAttribute("message", "Welcome To INFOSYS" + name);
+		model.addAttribute("message", "Welcome To INFOSYS LTD." + name);
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
